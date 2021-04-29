@@ -1,0 +1,65 @@
+{
+    "expo": {
+        "name": "banner_widget_react_native",
+        "slug": "banner_widget_react_native",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "cover",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "bundleIdentifier": "com.JustExample.App",
+            "supportsTablet": false,
+            "buildNumber": "1.0.0",
+            "infoPlist": {
+                "NSLocationAlwaysUsageDescription": "Your location will be used to show nearby places of interest or your location.",
+                "NSLocationWhenInUseUsageDescription": "Your location will be used to show nearby places of interest or your location.",
+            }
+        },
+        "android": {
+            "package": "com.JustExample.App",
+            "versionCode": 1,
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#FFFFFF"
+            },
+            "useNextNotificationsApi": true,
+            "permissions": [
+                "READ_INTERNAL_STORAGE",
+                "READ_EXTERNAL_STORAGE",
+                "WRITE_EXTERNAL_STORAGE",
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_COARSE_LOCATION",
+                "READ_PHONE_STATE"
+            ],
+            "config": {
+                "googleMaps": {
+                    "apiKey": "AIzaSyDOorBPJ9kgStsgAOFBH2fpkHRi_rCvbR0"
+                }
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "packagerOpts": {
+            "config": "metro.config.js",
+            "sourceExts": [
+                "html",
+                "js",
+                "jsx",
+                "svg",
+                "ts",
+                "tsx"
+            ]
+        }
+    }
+}
