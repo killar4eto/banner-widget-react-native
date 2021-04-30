@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions, StatusBar, Platform } from "react-native";
+import { StyleSheet, Dimensions, StatusBar } from "react-native";
 
 const windowSize = Dimensions.get('window');
 const deviceWidth = windowSize.width;
@@ -45,28 +45,46 @@ const theme = StyleSheet.create({
         height: deviceHeight / 2.5
     },
     authCentralContainer: {
-        position: 'relative',
+        position: 'absolute',
+        bottom: 0,
         alignSelf: 'center',
         flexDirection: 'column',
-        top: 30,
-        zIndex: 1040,
-        width: deviceWidth - 50,
-        height: deviceHeight / 2.5,
-        // backgroundColor: '#1f231f',
-        borderColor: '#1f231f',
-        borderWidth: 1,
-        borderRadius: 12,
         justifyContent: 'flex-start',
-        alignItems: 'flex-start',
         padding: 25,
+        zIndex: 2,
+        backgroundColor: '#fefefe',
+        borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,
+        height: deviceHeight / 1.55,
+        width: deviceWidth
+    },
+    generalBtn: {
+        zIndex: 1,
+        marginBottom: 15,
+        marginTop: 20,
+        borderRadius: 12,
+        backgroundColor: '#e88c39',
+        padding: 8,
+        alignItems: 'center',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 4,
+            height: 2,
         },
-        shadowOpacity: 0.48,
-        shadowRadius: 5.84,
-        elevation: 9
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 3
+    },
+    calendar: {
+        backgroundColor: 'rgba(0, 0, 0, .3)',
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1066,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 
